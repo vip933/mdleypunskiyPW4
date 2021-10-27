@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     
     @objc
     private func createNote(sender: UIBarButtonItem) {
-        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "NoteViewController")
+        else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
