@@ -15,6 +15,7 @@
 		B5CD596D272970DD00FE0A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD596B272970DD00FE0A52 /* LaunchScreen.storyboard */; };
 		B5CD5977272987C400FE0A52 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD5976272987C400FE0A52 /* NoteViewController.swift */; };
 		B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597827299A4D00FE0A52 /* NoteCell.swift */; };
+		B5CD597B2729A52A00FE0A52 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597A2729A52A00FE0A52 /* NoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B5CD596E272970DD00FE0A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CD5976272987C400FE0A52 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		B5CD597827299A4D00FE0A52 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		B5CD597A2729A52A00FE0A52 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B5CD596E272970DD00FE0A52 /* Info.plist */,
 				B5CD5976272987C400FE0A52 /* NoteViewController.swift */,
 				B5CD597827299A4D00FE0A52 /* NoteCell.swift */,
+				B5CD597A2729A52A00FE0A52 /* NoteModel.swift */,
 			);
 			path = mdleypusnkiyPW4;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CD5965272970DA00FE0A52 /* ViewController.swift in Sources */,
+				B5CD597B2729A52A00FE0A52 /* NoteModel.swift in Sources */,
 				B5CD5961272970DA00FE0A52 /* AppDelegate.swift in Sources */,
 				B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */,
 				B5CD5963272970DA00FE0A52 /* SceneDelegate.swift in Sources */,
