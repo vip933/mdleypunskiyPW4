@@ -5,11 +5,22 @@
 //  Created by Maksim on 27.10.2021.
 //
 
+import CoreData
 import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var notesCollectionView: UICollectionView!
     @IBOutlet weak var emptyCollectionLabel: UILabel!
+    
+    let context: NSManagedObjectContext = {
+        let container = NSPersistentContainer(name: "CoreDataNotes")
+        container.loadPersistentStores { _, error in
+            if let error = error {
+                fatalError("Container loading failed")
+            }
+        }
+        return container.viewContext
+    }()
     
     var notes: [NoteModel] = [] {
         didSet {
@@ -20,7 +31,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
         setupAddButton()
+    }
+    
+    func saveChanges() {
+        if context.hasChanges {
+            try? context.save()
+        }
+        if let notes = try? context.fetch(NoteModel.fetchRequest()) as? [NoteModel] {
+            self.notes = notes
+        } else {
+            self.notes = []
+        }
+    }
+    
+    func loadData() {
+        if let notes = try? context.fetch(NoteModel.fetchRequest()) as? [NoteModel] {
+            self.notes = notes.sorted(by:
+                                        { $0.creationDate.compare($1.creationDate) == .orderedDescending})
+        } else {
+            self.notes = []
+        }
     }
     
     private func setupAddButton() {
@@ -48,8 +80,8 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NoteCell", for: indexPath) as! NoteCell
         let note = notes[indexPath.row]
-        cell.titleLabel.text = note.titles
-        cell.descriptionLabel.text = note.description
+        cell.titleLabel.text = note.title
+        cell.descriptionLabel.text = note.descriptionText
         
         return cell
     }
