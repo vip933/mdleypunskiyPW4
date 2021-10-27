@@ -13,6 +13,8 @@
 		B5CD5968272970DA00FE0A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD5966272970DA00FE0A52 /* Main.storyboard */; };
 		B5CD596A272970DD00FE0A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CD5969272970DD00FE0A52 /* Assets.xcassets */; };
 		B5CD596D272970DD00FE0A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD596B272970DD00FE0A52 /* LaunchScreen.storyboard */; };
+		B5CD5977272987C400FE0A52 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD5976272987C400FE0A52 /* NoteViewController.swift */; };
+		B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597827299A4D00FE0A52 /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B5CD5969272970DD00FE0A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CD596C272970DD00FE0A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5CD596E272970DD00FE0A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CD5976272987C400FE0A52 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		B5CD597827299A4D00FE0A52 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B5CD5969272970DD00FE0A52 /* Assets.xcassets */,
 				B5CD596B272970DD00FE0A52 /* LaunchScreen.storyboard */,
 				B5CD596E272970DD00FE0A52 /* Info.plist */,
+				B5CD5976272987C400FE0A52 /* NoteViewController.swift */,
+				B5CD597827299A4D00FE0A52 /* NoteCell.swift */,
 			);
 			path = mdleypusnkiyPW4;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				B5CD5965272970DA00FE0A52 /* ViewController.swift in Sources */,
 				B5CD5961272970DA00FE0A52 /* AppDelegate.swift in Sources */,
+				B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */,
 				B5CD5963272970DA00FE0A52 /* SceneDelegate.swift in Sources */,
+				B5CD5977272987C400FE0A52 /* NoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
