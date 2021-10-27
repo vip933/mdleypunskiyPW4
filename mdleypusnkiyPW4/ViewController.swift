@@ -13,8 +13,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //notesCollectionView.register(NoteCell.self, forCellWithReuseIdentifier: "NoteCell")
-        // Do any additional setup after loading the view.
+        setupAddButton()
+    }
+    
+    private func setupAddButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(createNote(sender:)))
+    }
+    
+    @objc
+    private func createNote(sender: UIBarButtonItem) {
+        
     }
 }
 

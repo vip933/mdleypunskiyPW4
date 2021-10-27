@@ -8,5 +8,7 @@
 import UIKit
 
 class NoteViewController: UIViewController {
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
 }
