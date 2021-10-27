@@ -16,6 +16,7 @@
 		B5CD5977272987C400FE0A52 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD5976272987C400FE0A52 /* NoteViewController.swift */; };
 		B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597827299A4D00FE0A52 /* NoteCell.swift */; };
 		B5CD597B2729A52A00FE0A52 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597A2729A52A00FE0A52 /* NoteModel.swift */; };
+		B5CD597F2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5CD597D2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B5CD5976272987C400FE0A52 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		B5CD597827299A4D00FE0A52 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		B5CD597A2729A52A00FE0A52 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		B5CD597E2729AFD800FE0A52 /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				B5CD5976272987C400FE0A52 /* NoteViewController.swift */,
 				B5CD597827299A4D00FE0A52 /* NoteCell.swift */,
 				B5CD597A2729A52A00FE0A52 /* NoteModel.swift */,
+				B5CD597D2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld */,
 			);
 			path = mdleypusnkiyPW4;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				B5CD597B2729A52A00FE0A52 /* NoteModel.swift in Sources */,
 				B5CD5961272970DA00FE0A52 /* AppDelegate.swift in Sources */,
 				B5CD597927299A4D00FE0A52 /* NoteCell.swift in Sources */,
+				B5CD597F2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld in Sources */,
 				B5CD5963272970DA00FE0A52 /* SceneDelegate.swift in Sources */,
 				B5CD5977272987C400FE0A52 /* NoteViewController.swift in Sources */,
 			);
@@ -353,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5CD597D2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5CD597E2729AFD800FE0A52 /* CoreDataNotes.xcdatamodel */,
+			);
+			currentVersion = B5CD597E2729AFD800FE0A52 /* CoreDataNotes.xcdatamodel */;
+			path = CoreDataNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5CD5955272970DA00FE0A52 /* Project object */;
 }
