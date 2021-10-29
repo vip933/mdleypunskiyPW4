@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var notesCollectionView: UICollectionView!
     @IBOutlet weak var emptyCollectionLabel: UILabel!
     
+    var prevNote: NoteModel?
+    
     let context: NSManagedObjectContext = {
         let container = NSPersistentContainer(name: "CoreDataNotes")
         container.loadPersistentStores { _, error in

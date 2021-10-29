@@ -19,6 +19,7 @@ extension NoteModel {
     @NSManaged public var creationDate: Date
     @NSManaged public var descriptionText: String?
     @NSManaged public var title: String?
+    @NSManaged public var relationship: NoteModel?
 
 }
 
