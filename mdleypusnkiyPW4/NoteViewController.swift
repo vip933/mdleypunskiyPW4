@@ -33,6 +33,8 @@ class NoteViewController: UIViewController {
             newNote.title = title
             newNote.descriptionText = descriptionText
             newNote.creationDate = Date()
+            // status 1 - in process
+            newNote.status = 1
             newNote.relationship = outputVC.prevNote
             outputVC.prevNote = newNote
         }

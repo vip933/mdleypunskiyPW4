@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5B67F23272C1442005CF2F0 /* CoreDataNotes v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataNotes v2.xcdatamodel"; sourceTree = "<group>"; };
 		B5CD595D272970DA00FE0A52 /* mdleypusnkiyPW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdleypusnkiyPW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CD5960272970DA00FE0A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CD5962272970DA00FE0A52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -366,9 +367,10 @@
 		B5CD597D2729AFD800FE0A52 /* CoreDataNotes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				B5B67F23272C1442005CF2F0 /* CoreDataNotes v2.xcdatamodel */,
 				B5CD597E2729AFD800FE0A52 /* CoreDataNotes.xcdatamodel */,
 			);
-			currentVersion = B5CD597E2729AFD800FE0A52 /* CoreDataNotes.xcdatamodel */;
+			currentVersion = B5B67F23272C1442005CF2F0 /* CoreDataNotes v2.xcdatamodel */;
 			path = CoreDataNotes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
